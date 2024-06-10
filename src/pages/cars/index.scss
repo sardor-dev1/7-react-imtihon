@@ -1,0 +1,21 @@
+tr {
+    width: 100%;
+}
+.body__table {
+  span {
+    display: none;
+  }
+  @media (max-width: 1200px) {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    td {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      span {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.product{
+
+    &__body{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+    }
+    &__img {
+        object-fit: contain;
+    }
+}

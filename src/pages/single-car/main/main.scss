@@ -1,0 +1,17 @@
+.main__layout {
+  width: 100%;
+}
+main {
+  padding: 20px;
+}
+.main__left {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+.main__left__body {
+  padding-top: 80px;
+  background-color: #eef2f6;
+  height: 100%;
+  border-radius: 3px;
+}

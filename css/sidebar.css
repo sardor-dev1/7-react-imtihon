@@ -1,0 +1,35 @@
+.sidebar {
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  color: #c3996b;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 20px 20px;
+  gap: 15px;
+}
+.sidebar a {
+  text-decoration: none;
+  border: 1px solid orange;
+  padding: 4px 0;
+  font-size: 18px;
+  text-align: center;
+  transition: 0.2s;
+  border-radius: 5px;
+}
+.sidebar .NavLink {
+  color: orange;
+}
+.sidebar .NavLink:hover {
+  background-color: rgb(252, 236, 207);
+}
+.sidebar .active {
+  background-color: orange;
+  color: white;
+}
+.sidebar .active:hover {
+  background-color: orange;
+}
