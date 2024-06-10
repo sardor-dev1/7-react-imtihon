@@ -6,7 +6,7 @@ import ResponsiveDrawer from "../../layout";
 const Header = () => {
   return (
     <header className="header">
-      <h2>Logo</h2>
+      <h2>Hello</h2>
       <div>
         <Link to={"/"}>
           <button className="header__out">

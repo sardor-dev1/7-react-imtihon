@@ -29,7 +29,7 @@ const Index = () => {
   };
 
   const handleCardClick = (id) => {
-    navigate(`/product/${id}`);
+    navigate(`/main/product-single/${id}`);
   };
 
   return (
@@ -39,7 +39,7 @@ const Index = () => {
           {products.map((item) => (
             <Card
               key={item.id}
-              className="product__card"
+              className="product__card relative"
               sx={{ maxWidth: 360 }}
               onClick={() => handleCardClick(item.id)}
             >
@@ -73,8 +73,8 @@ const Index = () => {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <div className="card__footer">
-                <CardActions className="product__delete">
+              <div className="card__footer absolute bottom-0 left-0">
+                <CardActions className="product__delete ">
                   <Button
                     variant="outlined"
                     onClick={(e) => {

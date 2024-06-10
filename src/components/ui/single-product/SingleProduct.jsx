@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 
-const Product = () => {
+const SingleProduct = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
 
@@ -24,4 +24,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default SingleProduct;

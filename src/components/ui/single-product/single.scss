@@ -1,0 +1,19 @@
+.container {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  max-width: 600px;
+  width: 100%;
+}
+
+.media {
+  height: 400px;
+  background-size: contain;
+}
+
+.content {
+  text-align: center;
+}

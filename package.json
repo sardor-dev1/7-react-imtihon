@@ -19,6 +19,7 @@
     "bootstrap": "^5.3.3",
     "nanoid": "^5.0.7",
     "react": "^18.2.0",
+    "react-beautiful-dnd": "^13.1.1",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1",
     "react-toastify": "^10.0.5",

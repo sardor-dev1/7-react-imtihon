@@ -1,21 +1,19 @@
-tr {
-    width: 100%;
+.kanban-board {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
 }
-.body__table {
-  span {
-    display: none;
-  }
-  @media (max-width: 1200px) {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    td {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-      span {
-        display: block;
-      }
-    }
-  }
+
+.kanban-column {
+  flex: 1;
+}
+
+.kanban-task {
+  margin-bottom: 8px;
+}
+
+.add-task {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
 }

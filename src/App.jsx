@@ -1,8 +1,9 @@
-import ResponsiveDrawer from "./components/layout";
+import { Outlet } from 'react-router-dom';
+import MainLayout from './layout'
 const App = () => {
   return (
     <>
-      <ResponsiveDrawer />
+      <Outlet/>
     </>
   );
 };
