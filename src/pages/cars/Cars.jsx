@@ -35,19 +35,9 @@ const Cards = () => {
       setCars([
         {
           id: nanoid(),
-          status: "open",
-          brand: "Toyota",
-          color: "Red",
-          price: 20000,
-          year: "2020-01-01",
         },
         {
           id: nanoid(),
-          status: "pending",
-          brand: "Honda",
-          color: "Blue",
-          price: 15000,
-          year: "2019-01-01",
         },
        
       ]);
