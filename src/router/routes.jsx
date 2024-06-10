@@ -1,10 +1,10 @@
 export const routes = [
   {
     path: "/main",
-    content: "Cars",
+    content: "Cards",
   },
   {
     path: "/main/product",
-    content: "Product",
+    content: "Products",
   }
 ];

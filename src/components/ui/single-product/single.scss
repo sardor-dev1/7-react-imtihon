@@ -4,16 +4,53 @@
   justify-content: center;
 }
 
-.card {
-  max-width: 600px;
-  width: 100%;
-}
+.single {
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    &__img {
+      img {
+        width: 350px;
+      }
+    }
 
-.media {
-  height: 400px;
-  background-size: contain;
-}
+    &__info {
+      display: flex;
+      flex-direction: column;
+      p {
+        font-size: 18px;
+      }
+      &__title {
+        font-size: 36px;
+        font-weight: 600;
+        width: 100%;
+        max-width: 450px;
+      }
 
-.content {
-  text-align: center;
+      &__text {
+        width: 100%;
+        max-width: 500px;
+      }
+
+      &__price {
+        span {
+          color: red;
+          font-size: 18px;
+        }
+      }
+      &__category {
+        font-size: 18px;
+        span {
+          font-style: italic;
+        }
+      }
+      &__star {
+        span {
+          color: orange;
+        }
+      }
+    }
+  }
 }

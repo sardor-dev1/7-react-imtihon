@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { nanoid } from "nanoid";
 import { NavLink } from "react-router-dom";
+import CardLoading from "../cars-loading/carsLoading";
 import {
   Button,
   TextField,
@@ -20,12 +21,39 @@ import UserModal from "../../components/modalka";
 
 const Cards = () => {
   const [cars, setCars] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [modal, setModal] = useState(false);
   const [editModal, setEditModal] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
   const [currentCar, setCurrentCar] = useState(null);
   const [currentStatus, setCurrentStatus] = useState("");
   const [statusAddAnother, setStatusAddAnother] = useState("");
+
+  useEffect(() => {
+    // Simulate an API call
+    setTimeout(() => {
+      setCars([
+        {
+          id: nanoid(),
+          status: "open",
+          brand: "Toyota",
+          color: "Red",
+          price: 20000,
+          year: "2020-01-01",
+        },
+        {
+          id: nanoid(),
+          status: "pending",
+          brand: "Honda",
+          color: "Blue",
+          price: 15000,
+          year: "2019-01-01",
+        },
+       
+      ]);
+      setLoading(false);
+    }, 2000);
+  }, []);
 
   const openModal = (status) => {
     setCurrentStatus(status);
@@ -63,6 +91,8 @@ const Cards = () => {
   );
 
   const names = ["open", "pending", "inprog", "complete"];
+
+  if (loading) return <CardLoading />;
 
   return (
     <>
